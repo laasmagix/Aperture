@@ -127,6 +127,10 @@ body {
 }
 .page__tools {
 }
+.page__leafs {
+}
+.page__clients {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -712,6 +716,74 @@ body {
   .leafs__body {
     margin: 0px 0px 130px 0px;
     text-align: center;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Clients ======================================== */
+.clients {
+  padding-top: 113px;
+  padding-bottom: 100px;
+}
+.clients__container {
+}
+.clients__title {
+  color: #fff;
+  font-size: 40px;
+  line-height: 105%;
+  text-align: center;
+}
+.clients__title:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.clients__subtitle {
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+}
+.clients__subtitle:not(:last-child) {
+  margin: 0px 0px 42px 0px;
+}
+.clients__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 109px;
+  justify-content: center;
+}
+.clients__item {
+  flex: 0 0 128px;
+}
+.clients__item img {
+  max-width: 100%;
+}
+@media (max-width: 870.98px) {
+  .clients {
+    padding-top: 90px;
+  }
+  .clients__items {
+    gap: 90px;
+  }
+}
+@media (max-width: 610.98px) {
+  .clients {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .clients__items {
+    gap: 60px;
+  }
+}
+@media (max-width: 610.98px) {
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .clients__items {
+  }
+}
+@media (max-width: 360px) {
+  .clients__subtitle {
+    font-size: 20px;
   }
 }
 /* ================================================================================ */
