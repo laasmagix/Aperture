@@ -123,6 +123,8 @@ body {
 }
 .page__about {
 }
+.page__sunset {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -428,6 +430,83 @@ body {
   }
   .about__subtitle {
     font-size: 17px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Sunset ======================================== */
+.sunset {
+  position: relative;
+  min-height: 37.5rem;
+}
+.sunset__container {
+  position: relative;
+  z-index: 50;
+  padding-top: 260px;
+  padding-bottom: 40px;
+}
+.sunset__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 200px;
+}
+.sunset__title {
+  color: #fff;
+  line-height: 142.857%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sunset__text {
+  line-height: 142.857%;
+  text-align: right;
+  max-width: 298px;
+}
+.sunset__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.sunset__icon {
+}
+.sunset__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media (max-width: 815px) {
+  .sunset__container {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 610.98px) {
+  .sunset__container {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 430.98px) {
+  .sunset {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .sunset__container {
+    justify-content: center;
+  }
+
+  .sunset__text {
+    text-align: center;
+  }
+  .sunset__body {
+    align-items: center;
+  }
+  .sunset__row {
+    justify-content: center;
+  }
+  .sunset__body {
+    margin: 0px 0px 130px 0px;
   }
 }
 /* ================================================================================ */
