@@ -131,6 +131,8 @@ body {
 }
 .page__clients {
 }
+.page__star {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -773,17 +775,94 @@ body {
     gap: 60px;
   }
 }
-@media (max-width: 610.98px) {
-  .clients {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  .clients__items {
-  }
-}
 @media (max-width: 360px) {
   .clients__subtitle {
     font-size: 20px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Star ======================================== */
+.star {
+  position: relative;
+  min-height: 37.5rem;
+}
+.star__container {
+  position: relative;
+  z-index: 50;
+  padding-top: 260px;
+  padding-bottom: 40px;
+}
+.star__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 200px;
+}
+.star__title {
+  color: #fff;
+  line-height: 142.857%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.star__title:not(:last-child) {
+  margin: 0px 0px 3px 0px;
+}
+.star__text {
+  line-height: 142.857%;
+  text-align: right;
+  max-width: 298px;
+}
+.star__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.star__icon {
+}
+.star__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media (max-width: 815px) {
+  .star__container {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 610.98px) {
+  .star__container {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 430.98px) {
+  .star {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .star__container {
+    justify-content: center;
+  }
+
+  .star__text {
+    text-align: center;
+  }
+  .star__body {
+    align-items: center;
+  }
+  .star__row {
+    justify-content: center;
+  }
+  .star__background {
+    opacity: 0.8;
+  }
+  .star__body {
+    margin: 0px 0px 130px 0px;
+    text-align: center;
   }
 }
 /* ================================================================================ */
