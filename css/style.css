@@ -137,6 +137,8 @@ body {
 }
 .page__areas {
 }
+.page__subcribe {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -1054,6 +1056,80 @@ body {
 @media (max-width: 430.98px) {
   .areas__container {
     padding-top: 30px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Subscribe ======================================== */
+.subcribe {
+}
+.subcribe__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1088px;
+  margin: 0px auto;
+  padding-top: 36px;
+  padding-bottom: 44px;
+  border-bottom: 2px solid #fff;
+  flex-wrap: wrap;
+}
+.subscribe__body {
+  flex: 0 1 56%;
+  padding-right: 30px;
+}
+.subcribe__title {
+  color: #fff;
+  line-height: 142.857%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.subcribe__title:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.subcribe__text {
+  font-size: 13px;
+  line-height: 153.846%;
+}
+.subcribe__row {
+  position: relative;
+  width: 100%;
+  height: 52px;
+}
+@media (min-width: 610.98px) {
+  .subcribe__row {
+    flex: 0 1 44%;
+  }
+}
+.subcribe__input {
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+
+  color: #000;
+  line-height: 142.857%;
+  letter-spacing: 2px;
+  padding: 15px 74px 15px 15px;
+}
+.subcribe__btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 63px;
+  height: 30px;
+  border-radius: 11px;
+  background-color: #000;
+}
+@media (max-width: 610.98px) {
+  .subsccribe__container {
+  }
+  .subscribe__body {
+    flex: 1 1 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .subscribe__row {
+    flex: 1 1 100%;
   }
 }
 /* ================================================================================ */
